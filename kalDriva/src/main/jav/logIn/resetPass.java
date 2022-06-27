@@ -6,16 +6,19 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import jakarta.servlet.ServletException;
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
  * Servlet implementation class resetPass
  */
-//@WebServlet("/resetPass")
-@WebServlet(name = "resetPass", value = "/resetPass")
+@WebServlet("/resetPass")
+//@WebServlet(name = "resetPass", value = "/resetPass")
 public class resetPass extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
